@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <!-- SEO best practices applied -->
+    <meta name="description" content="A warm, interactive birthday celebration for a special friend, featuring memories, personalized wishes, and a surprise message.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <!-- Audio Element -->
+    <!-- REPLACE THIS WITH YOUR MUSIC FILE PATH -->
+    <audio id="bg-music" loop>
+        <source src="your-music-file.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <button id="surprise-btn" class="btn-primary">Click to Open Your Surprise</button>
+        
+        <div id="hero-content" class="hidden">
+            <h1 class="glowing-text">Happy Birthday!</h1>
+            <p class="subtitle">To someone truly special.</p>
+        </div>
+        
+        <div class="scroll-indicator hidden" id="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="arrow"></div>
+        </div>
+    </header>
+
+    <!-- Content Sections (Revealed after button click) -->
+    <main id="main-content" class="hidden">
+
+        <!-- Timeline / Memories Section -->
+        <section class="timeline-section" id="memories">
+            <h2 class="section-title">Our Special Moments</h2>
+            <div class="timeline">
+                
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <!-- REPLACE WITH YOUR IMAGE PATH -->
+                        <div class="image-placeholder">
+                            <span class="placeholder-text">Add Memory Photo Here</span>
+                            <!-- <img src="memory1.jpg" alt="Memory 1" /> -->
+                        </div>
+                        <h3>The Beginning</h3>
+                        <p>Where our amazing journey started. A beautiful memory that will last forever.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <!-- REPLACE WITH YOUR IMAGE PATH -->
+                        <div class="image-placeholder">
+                            <span class="placeholder-text">Add Memory Photo Here</span>
+                            <!-- <img src="memory2.jpg" alt="Memory 2" /> -->
+                        </div>
+                        <h3>An Unforgettable Trip</h3>
+                        <p>Laughing until our stomachs hurt and creating stories we'll tell for years.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <!-- REPLACE WITH YOUR IMAGE PATH -->
+                        <div class="image-placeholder">
+                            <span class="placeholder-text">Add Memory Photo Here</span>
+                            <!-- <img src="memory3.jpg" alt="Memory 3" /> -->
+                        </div>
+                        <h3>Recent Adventures</h3>
+                        <p>Looking forward to making countless more memories together.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Secret Envelope Section -->
+        <section class="envelope-section" id="message">
+            <h2 class="section-title">A Message for You</h2>
+            <div class="envelope-wrapper" id="envelope-wrapper">
+                <div class="envelope">
+                    <div class="envelope-flap"></div>
+                    <div class="letter">
+                        <p id="typewriter-text"></p>
+                    </div>
+                    <div class="envelope-front"></div>
+                </div>
+            </div>
+            <p class="envelope-hint">Click the envelope to open</p>
+        </section>
+
+        <!-- Wishes Grid Section -->
+        <section class="wishes-section" id="wishes">
+            <h2 class="section-title">Warm Wishes</h2>
+            <div class="wishes-grid">
+                
+                <div class="wish-card reveal" tabindex="0">
+                    <div class="wish-card-inner">
+                        <div class="wish-card-front">
+                            <span>Wish 1</span>
+                        </div>
+                        <div class="wish-card-back">
+                            <p>May your day be as beautiful as your heart.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wish-card reveal" tabindex="0">
+                    <div class="wish-card-inner">
+                        <div class="wish-card-front">
+                            <span>Wish 2</span>
+                        </div>
+                        <div class="wish-card-back">
+                            <p>Wishing you endless joy and happiness today and always.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wish-card reveal" tabindex="0">
+                    <div class="wish-card-inner">
+                        <div class="wish-card-front">
+                            <span>Wish 3</span>
+                        </div>
+                        <div class="wish-card-back">
+                            <p>To another year of amazing adventures and laughter!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wish-card reveal" tabindex="0">
+                    <div class="wish-card-inner">
+                        <div class="wish-card-front">
+                            <span>Wish 4</span>
+                        </div>
+                        <div class="wish-card-back">
+                            <p>You deserve all the best the world has to offer.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <p class="wishes-hint">Click the cards to reveal</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

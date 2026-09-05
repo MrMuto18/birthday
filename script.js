@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 3. Secret Envelope Interaction
     const envelopeWrapper = document.getElementById('envelope-wrapper');
     const typewriterText = document.getElementById('typewriter-text');
-    const message = "سنين دايمة لأعز إنسان! \n\nيعطيك الصحة على وقفتك معايا ديما، وعلى الضحك والذكريات المزيانة اللي عشناها مع بعضنا. \n\nان شاء الله نهارك يكون مليان بالفرحة والحب كيما اللي تجيبهم لحياتي. ان شاء الله ديما مع بعضنا، ونفرحو بيك! ❤️";
+    const message = "نتمناولك عام جديد يعبي حياتك بالنجاح، الفرحة، والراحة اللي تستاهلها. عيشك ختارك ديما موجودة، وإن شاء الله العام هذا يكون بداية لكل حاجة حلوة تتمنّاها! 🌟💖";
     let isTyping = false;
     let typeIndex = 0;
 

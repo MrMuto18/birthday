@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 3. Secret Envelope Interaction
     const envelopeWrapper = document.getElementById('envelope-wrapper');
     const typewriterText = document.getElementById('typewriter-text');
-    const message = "Happy Birthday to my dearest friend! \n\nThank you for always being there, for the endless laughs, and for all the unforgettable memories we've made together. \n\nI hope your special day is filled with as much joy and love as you bring into my life. Here's to many more years of beautiful friendship! ❤️";
+    const message = "سنين دايمة لأعز إنسان! \n\nيعطيك الصحة على وقفتك معايا ديما، وعلى الضحك والذكريات المزيانة اللي عشناها مع بعضنا. \n\nان شاء الله نهارك يكون مليان بالفرحة والحب كيما اللي تجيبهم لحياتي. ان شاء الله ديما مع بعضنا، ونفرحو بيك! ❤️";
     let isTyping = false;
     let typeIndex = 0;
 

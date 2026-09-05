@@ -17,7 +17,7 @@
 }
 
 body {
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Tajawal', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-dark);
     overflow-x: hidden;
@@ -26,7 +26,7 @@ body {
 
 /* Typography */
 h1, h2, .dancing-font {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Amiri', serif;
 }
 
 .section-title {
@@ -68,7 +68,7 @@ h1, h2, .dancing-font {
 .btn-primary {
     padding: 1.2rem 3rem;
     font-size: 1.3rem;
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Tajawal', sans-serif;
     font-weight: 600;
     color: var(--text-light);
     background-color: var(--primary-color);
@@ -158,8 +158,8 @@ h1, h2, .dancing-font {
     background-color: var(--secondary-color);
     top: 0;
     bottom: 0;
-    left: 50%;
-    margin-left: -2px;
+    right: 50%;
+    margin-right: -2px;
     border-radius: 2px;
 }
 
@@ -175,7 +175,7 @@ h1, h2, .dancing-font {
     position: absolute;
     width: 24px;
     height: 24px;
-    right: -12px;
+    left: -12px;
     background-color: var(--primary-color);
     border: 4px solid var(--bg-color);
     top: 15px;
@@ -185,15 +185,18 @@ h1, h2, .dancing-font {
 }
 
 .timeline-item:nth-child(even) {
-    left: 50%;
+    right: 50%;
+    left: auto;
 }
 
 .timeline-item:nth-child(odd) {
-    left: 0;
+    right: 0;
+    left: auto;
 }
 
 .timeline-item:nth-child(even)::after {
-    left: -12px;
+    right: -12px;
+    left: auto;
 }
 
 .timeline-content {
@@ -328,7 +331,7 @@ h1, h2, .dancing-font {
     transition: transform 0.8s ease, height 0.8s ease;
     z-index: 1;
     overflow: hidden;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Amiri', serif;
     font-size: 1.6rem;
     color: var(--primary-color);
     line-height: 1.5;
@@ -448,13 +451,13 @@ h1, h2, .dancing-font {
     .glowing-text { font-size: 3.5rem; }
     .subtitle { font-size: 1.4rem; }
     
-    .timeline::after { left: 31px; }
+    .timeline::after { right: 31px; }
     
-    .timeline-item { width: 100%; padding-left: 70px; padding-right: 20px; }
+    .timeline-item { width: 100%; padding-right: 70px; padding-left: 20px; }
     
-    .timeline-item:nth-child(even) { left: 0%; }
+    .timeline-item:nth-child(even) { right: 0%; }
     
-    .timeline-item::after { left: 19px !important; }
+    .timeline-item::after { right: 19px !important; left: auto !important; }
     
     .envelope-wrapper { width: 300px; height: 200px; }
     
